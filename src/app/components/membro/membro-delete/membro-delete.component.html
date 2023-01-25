@@ -1,0 +1,20 @@
+<mat-card class="card-home mat-elevation-z3">        
+    <mat-card-title class="card-title ">
+      Editar Membro
+  </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+        <input matInput placeholder="Nome" name="nome" [(ngModel)]="membro.nome" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <input matInput placeholder="Email" name="email" [(ngModel)]="membro.email" disabled>
+    </mat-form-field>    
+  </form>
+
+   <div>
+    <button mat-flat-button color="warn" (click)="deleteMembro()">Save</button>    
+    <button mat-flat-button  (click)="cancel()">Cancel</button>  
+   </div>
+</mat-card>
+
